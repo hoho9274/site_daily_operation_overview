@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+out/
+.next/
+.nuxt/
+
+# Coverage reports
+coverage/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Package files
+package-lock.json
+yarn.lock
+
+# Generated files
+*.min.js
+*.min.css
+*.bundle.js
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# E2E artifacts
+e2e/artifacts/
+e2e/reports/
+
+# Temporary files
+tmp/
+temp/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Mobile build artifacts
+*.ipa
+*.apk
+*.aab
+
+# React Native
+ios/build/
+android/build/
+android/app/build/
+
+# Expo
+.expo/
+web-build/
+
+# Bundle artifacts
+*.jsbundle
