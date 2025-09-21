@@ -1,0 +1,74 @@
+.status-chart {
+  padding: 16px 0;
+}
+
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chart-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chart-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-bar-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.chart-bar-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.chart-bar-track {
+  height: 24px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 6px;
+}
+
+.chart-bar-percentage {
+  font-size: 12px;
+  color: #9ca3af;
+  align-self: flex-end;
+}
+
+.chart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.total-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.total-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
