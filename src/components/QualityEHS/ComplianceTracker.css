@@ -1,0 +1,267 @@
+.compliance-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.compliance-overview {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.compliance-score-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.compliance-score-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.compliance-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.compliance-excellent {
+  background: linear-gradient(135deg, #d1fae5 0%, #10b981 100%);
+}
+
+.compliance-good {
+  background: linear-gradient(135deg, #dbeafe 0%, #3b82f6 100%);
+}
+
+.compliance-fair {
+  background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);
+}
+
+.compliance-poor {
+  background: linear-gradient(135deg, #fee2e2 0%, #ef4444 100%);
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-label {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.compliance-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breakdown-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 50px;
+  align-items: center;
+  gap: 12px;
+}
+
+.breakdown-label {
+  font-size: 14px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.breakdown-bar {
+  height: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.bar-fill.quality {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+.bar-fill.safety {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+.bar-fill.environmental {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.breakdown-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: right;
+}
+
+.compliance-stats {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.audit-list,
+.inspection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audit-item,
+.inspection-item {
+  padding: 12px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+.audit-item h4,
+.inspection-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.audit-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.audit-type {
+  background-color: #e5e7eb;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.inspection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inspection-info {
+  flex: 1;
+}
+
+.inspection-date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.inspection-result {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.result-pass {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.result-conditional {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.result-fail {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.checklist-progress {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+.checklist-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checklist-label {
+  font-size: 14px;
+  color: #4b5563;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .compliance-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .checklist-grid {
+    grid-template-columns: 1fr;
+  }
+}
