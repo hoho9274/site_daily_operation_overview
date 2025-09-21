@@ -64,7 +64,7 @@ const originalWarn = console.warn;
 const originalError = console.error;
 
 beforeAll(() => {
-  console.warn = (...args: any[]) => {
+  console.warn = (...args) => {
     if (
       typeof args[0] === 'string' &&
       args[0].includes('Warning: ReactDOM.render is deprecated')
@@ -74,7 +74,7 @@ beforeAll(() => {
     originalWarn.call(console, ...args);
   };
 
-  console.error = (...args: any[]) => {
+  console.error = (...args) => {
     if (
       typeof args[0] === 'string' &&
       (args[0].includes('Warning:') || args[0].includes('Error: Warning:'))

@@ -1,0 +1,167 @@
+.rfi-manager {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.rfi-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.rfi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rfi-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.rfi-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rfi-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.rfi-card-title-group {
+  flex: 1;
+}
+
+.rfi-card-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 4px 0;
+}
+
+.rfi-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.rfi-card-badges {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.rfi-card-description {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.rfi-card-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .rfi-card-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+.meta-row {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.meta-label {
+  color: #9ca3af;
+  min-width: 90px;
+}
+
+.meta-value {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.overdue-indicator {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.rfi-response {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.response-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.response-text {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+.response-date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.rfi-card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #059669;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rfi-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-left {
+    flex-direction: column;
+  }
+
+  .rfi-card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .rfi-card-actions {
+    flex-direction: column;
+  }
+}
