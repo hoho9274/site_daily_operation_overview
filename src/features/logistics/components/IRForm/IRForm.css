@@ -1,0 +1,256 @@
+.ir-form-container {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.ir-form-container h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ir-form {
+  background: white;
+  margin-bottom: 2rem;
+}
+
+/* Finding Form */
+.finding-form {
+  background: #fef5e7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #f39c12;
+}
+
+.findings-list {
+  margin-top: 1rem;
+}
+
+.finding-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #e67e22;
+}
+
+.finding-info {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.finding-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.finding-category {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.finding-description {
+  color: #555;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5;
+}
+
+/* Corrective Action Form */
+.action-form {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #4caf50;
+}
+
+.actions-list {
+  margin-top: 1rem;
+}
+
+.action-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #27ae60;
+}
+
+.action-info {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.action-finding {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.action-description {
+  color: #333;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.action-details {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-in-progress {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* Severity Badges */
+.severity-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.severity-minor {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.severity-major {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.severity-critical {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Recent IRs */
+.recent-irs {
+  margin-top: 2rem;
+}
+
+.recent-irs h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ir-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.ir-summary {
+  background: white;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.ir-summary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.ir-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.ir-number {
+  font-weight: 600;
+  color: #333;
+}
+
+.ir-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.ir-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ir-form-container {
+    padding: 1rem;
+  }
+
+  .ir-list {
+    grid-template-columns: 1fr;
+  }
+
+  .finding-item,
+  .action-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .finding-item .btn,
+  .action-item .btn {
+    align-self: flex-start;
+  }
+
+  .action-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
